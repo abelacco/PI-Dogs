@@ -74,12 +74,11 @@
     font-size: 17px;
     border-radius: 6px;
     font-weight: 500;
-    color: var(--color);
     text-align: center;
     cursor: pointer
   }
 
-  .buttonR:hover {
+  .buttonR:hover { 
     color: #fff;
     background-color: #560bad ;
    }
@@ -88,7 +87,6 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    /* background-color: aqua; */
     gap: 5px;
     margin-bottom: 10px;
   }
@@ -102,12 +100,57 @@
   }
 
   .cardDogs{
-    /* background-color: aqua; */
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     flex-wrap: wrap;
 
   }
+
+  @media screen and (max-width: 450px) {
+    .mainContainer {
+        width: 100%;            
+        height: 300px;
+        border-radius: 0px;  
+         
+    }
+    .searchcontainer {
+      height:300px;
+      width: 100%;
+   
+    }
+
+    .cardDogs {
+      margin-bottom: 100px;
+    }
+
+    .SyR {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .buttonR {
+      width: 78%;
+      height: 40px;
+      
+    }
+
+    .filterContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      gap:10px;
+    }
+    .filterContainer option {
+      font-size: 15px;
+      
+    }
+    
+}

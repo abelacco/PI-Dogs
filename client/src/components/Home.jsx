@@ -88,9 +88,9 @@ export default function Home() {
         <div className={styles.mainContainer}>
             <h2>Find Your Perfect Dog Breed</h2>
             <div className={styles.SyR}>
-            <Searchbar setCurrentPage={setCurrentPage}/>
-            <button className={styles.buttonR} onClick={e => {handleClick(e)}}>Refresh </button>
-           </div>
+              <Searchbar setCurrentPage={setCurrentPage}/>
+              <button className={styles.buttonR} onClick={e => {handleClick(e)}}>Refresh </button>
+            </div>
            <div  className={styles.filterContainer}>
               <select onChange={ e => {handleFilterAscDesc(e)}}>
                 <option hidden>ORDER BY NAME</option>
